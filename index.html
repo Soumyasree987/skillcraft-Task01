@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to Our Landing Page</h1>
+    <p>This is a responsive landing page with a fixed navigation bar.</p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <p>Feature details go here...</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>About content here...</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Contact form or details here...</p>
+  </section>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>
